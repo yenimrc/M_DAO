@@ -1,0 +1,25 @@
+{
+  "dao_type": "excel",  
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "database": "usuarios"
+  },
+  "txt": {
+    "filepath": "usuarios.txt"
+  },
+  "xml": {
+    "filepath": "usuarios.xml"
+  },
+  "mssql": {
+    "host": "localhost",
+    "user": "sa",
+    "password": "123",
+    "database": "usuarios"
+  },
+  "excel": {  
+    "filepath": "usuarios.xlsx"
+  }
+}
