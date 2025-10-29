@@ -16,19 +16,13 @@ class UserDAOExcel(UserDAOBase):
             workbook.save(filepath)
 
     def add_user(self, user: User):
-        # Load the existing workbook and get the active sheet
+        
         workbook = openpyxl.load_workbook(self.filepath)
         sheet = workbook.active
 
-        # Determine the new user ID based on the number of rows
-        # Subtract 1 because the first row is the header
         new_id = sheet.max_row
         
-        # We need to call get_all_users to get the correct next ID based on the content
-        # An Excel file might have empty rows, max_row is not reliable for ID
-        # A more robust way is to read all and find max ID, but for simplicity
-        # we'll use a count of non-header rows or the max row.
-        # Let's use a count of non-header rows for simplicity in this structure
+        
         user_id = len(self.get_all_users()) + 1
 
         # Append the new user data as a row
