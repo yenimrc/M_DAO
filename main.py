@@ -10,7 +10,7 @@ def main():
     # 2. Define a lista de nuevos usuarios
     new_users = [
         
-        User(None, "Mike Williams", "mikyy_w@prueba.com"),
+        User(None, "Carlos Perez", "charlyy_p@prueba.com"),
         #User(None, "Carlos Gomez", "carlos.g@prueba.com"),
         #User(None, "Sofia Lopez", "sofia.l@prueba.com")
     ]
